@@ -1,0 +1,21 @@
+.form {
+   width: 100%;
+   margin-top: 1.875rem; /* 30px */
+   input {
+      width: 100%;
+      padding-bottom: 0.3125rem; /* 5px */
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem; /* 16px */
+      outline: none;
+      border: none;
+      border-bottom: 1px solid rgba($color: $primaryColor, $alpha: .5);
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .form {
+      input {
+         text-align: center;
+      }
+   }
+}

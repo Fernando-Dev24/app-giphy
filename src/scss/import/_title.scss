@@ -1,0 +1,44 @@
+.title {
+   width: 100%;
+   height: auto;
+   padding: 3.125rem; /* 50px 40px */
+   background: #FFF;
+   .title__container {
+      position: sticky;
+      top: 3.125rem; /* 50px */
+      h1 {
+         margin-bottom: 1.25rem; /* 20px */
+         text-transform: uppercase;
+         font-size: 4.375rem; /* 70px */
+         font-weight: 600;
+         border-top: 5px solid $primaryColor;
+         border-bottom: 5px solid $primaryColor;
+      }
+      p {
+         font-size: 0.875rem; /* 14px */
+         margin: 0.625rem 0; /* 10px 0 */
+         font-weight: 400;
+      }
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .title {
+      .title__container {
+         position: static;
+         top: 0;
+         text-align: center;
+      }
+   }
+}
+
+@media screen and (max-width: 550px) {
+   .title {
+      padding: 3.125rem 2.5rem; /* 50px 40px */
+      .title__container {
+         h1 {
+            font-size: 3.75rem; /* 60px */
+         }
+      }
+   }
+}
